@@ -13,11 +13,11 @@ name: Run SSH Terminal
 on:
   repository_dispatch:
   workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'true'
+#    inputs:
+#      ssh:
+#        description: 'SSH connection to Actions'
+#        required: false
+#        default: 'true'
 #  schedule:
 #    - cron: 0 8 * * 5
 
@@ -36,7 +36,7 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  build:
+  RUN:
     runs-on: ubuntu-18.04
 
     steps:
